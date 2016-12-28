@@ -1,0 +1,130 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	/* Setting default text color, background and a font stack */
+	font-size:0.825em;
+	color:#444444;
+	background:url("img/bg.png") repeat-x #fff;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+#mosaic-slideshow{
+	/* The slideshow container div */
+	height:500px;
+	margin:0 auto;
+	position:relative;
+	width:670px;
+}
+
+.mosaic-slide{
+	/* This class is shared between all the slides */
+	left:80px;
+	position:absolute;
+	top:25px;
+	
+	border:10px solid #555;
+	
+	/* CSS3 rounded corners */
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+}
+
+.tile{
+	/* The individual tiles */
+	height:60px;
+	width:60px;
+	float:left;
+	border:1px solid #555;
+	border-width:0 1px 1px 0;
+	background-color:#555;
+}
+
+.arrow{
+	/* The prev/next arrows */
+	width:35px;
+	height:70px;
+	background:url("img/arrows.png") no-repeat;
+	position:absolute;
+	cursor:pointer;
+	top:50%;
+	margin-top:-35px;
+}
+
+.arrow.left{
+	left:15px;
+	background-position:center top;
+}
+
+.arrow.left:hover{
+	background-position:center -70px;
+}
+
+.arrow.right{
+	right:15px;
+	background-position:center -140px;
+}
+
+.arrow.right:hover{
+	background-position:center -210px;
+}
+
+.clear{
+	/* This class clears the floats */
+	clear:both;
+}
+
+
+/* The styles below are only necessary for the styling of the demo page: */
+
+#main{
+	position:relative;
+	margin:0 auto;
+	width:960px;
+}
+
+h1{
+	padding:30px 0;
+	text-align:center;
+	text-shadow:0 1px 1px white;
+}
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a img{
+	border:none;
+}
+
+
+h1,h2{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+}
+
+h2{
+	text-align:center;
+	margin:0 0 30px;
+}
+
+.credit{
+	text-align:center;
+	margin-bottom:25px;
+}
+
+.credit a{
+	font-size:10px;
+	color:#999;
+	margin-left:10px;
+
+}

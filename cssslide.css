@@ -1,0 +1,103 @@
+    #slideshow {  
+        position: relative;  
+        width: 800px;  
+        height: 388px;  
+        padding: 15px;  
+        margin: 0 auto 2em;  
+        border: 1px solid #ddd;  
+        background: #FFF;  
+        /* CSS3 effects */  
+        background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);  
+        border-radius: 2px 2px 2px 2px;  
+        box-shadow: 0 0 3px rgba(0,0,0, 0.2);  
+    }  
+       
+    /* avanced box-shadow 
+     * tutorial @ 
+     * http://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow 
+    */  
+    #slideshow:before,  
+    #slideshow:after {  
+        position: absolute;  
+        bottom:16px;  
+        z-index: -10;  
+        width: 50%;  
+        height: 20px;  
+        content: " ";  
+        background: rgba(0,0,0,0.1);  
+        border-radius: 50%;  
+        box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);  
+    }  
+    #slideshow:before {  
+        left:0;  
+        transform: rotate(-4deg);  
+    }  
+    #slideshow:after {  
+        right:0;  
+        transform: rotate(4deg);  
+    }  
+#slideshow .container {  
+    position:relative;  
+    width: 800px;  
+    height: 388px;  
+    overflow: hidden;  
+}  
+/* on prévoit un petit espace gris pour la timeline */  
+#slideshow .container:after {  
+    position:absolute;  
+    bottom: 0; left:0;  
+    content: " ";  
+    width: 100%;  
+    height: 1px;  
+    background: #999;  
+}  
+/* 
+   le conteneur des slides 
+   en largeur il fait 100% x le nombre de slides 
+*/  
+#slideshow .slider {  
+    position: absolute;  
+    left:0; top:0;  
+    width: 400%;  
+    height: 310px;  
+}  
+/* annulation des marges sur figure */  
+#slideshow figure {  
+    position:relative;  
+    display:inline-block;  
+    padding:0; margin:0;  
+}  
+/* petit effet de vignette sur les images */  
+#slideshow figure:after {  
+    position: absolute;  
+    display:block;  
+    content: " ";  
+    top:0; left:0;  
+    width: 100%; height: 100%;  
+    box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;  
+}  
+#slideshow figcaption {  
+    position:absolute;  
+    left:0; right:0; bottom: 5px;  
+    padding: 20px;  
+    margin:0;  
+    border-top: 1px solid rgb(225,225,225);  
+    text-align:center;  
+    letter-spacing: 0.05em;  
+    word-spacing: 0.05em;  
+    font-family: Georgia, Times, serif;  
+    background: #fff;  
+    background: rgba(255,255,255,0.7);  
+    color: #555;  
+    text-shadow: -1px -1px 0 rgba(255,255,255,0.3);  
+}  
+@keyframes slider {  
+    0%, 20%, 100%   { left: 0 }  
+    25%, 45%        { left: -100% }  
+    50%, 70%        { left: -200% }  
+    75%, 95%        { left: -300% }  
+}  
+#slideshow .slider {  
+    /* ... avec la propriété animation */  
+    animation: slider 8s infinite;  
+}  

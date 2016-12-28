@@ -1,0 +1,165 @@
+body{
+    
+                background-color: white;
+		background-image: url("bois.jpg");
+		background-repeat: repeat;
+		background-position: center top;
+                background-attachment: scroll ;
+                text-align:center;
+             }
+
+
+
+
+div#cc-tp-nav {
+	width:100%;
+  position:relative;
+	border-bottom:1px solid #FFFFFF;
+	border-top:1px solid #FFFFFF;
+  padding:15px 0;
+	background:#fff;
+}
+
+html > body div#cc-tp-nav {	
+	background:repeat transparent;
+}
+
+div#cc-tp-nav .cc-tp-gutter {	
+	position:relative;
+	width:960px;
+  margin:0 auto; 
+}
+
+
+div#cc-tp-footer {
+	position:relative;
+	border-bottom:1px solid #FFFFFF;
+	border-top:1px solid #FFFFFF;
+  padding:15px 0;
+	background:#fff;
+}
+
+html > body div#cc-tp-footer {	
+	background:repeat transparent;
+}
+
+div#cc-tp-footer a {
+	text-decoration:none;
+	font-weight:normal;
+}
+
+
+
+/*  Gutter	
+----------------------------------------------- */
+
+
+	
+/*  Sub-Elements
+----------------------------------------------- */
+
+
+
+	
+/*  MAIN MENU	
+----------------------------------------------- */
+ul.mainNav1,
+ul.mainNav2,
+ul.mainNav3 {
+	margin:0 !important;
+	padding:0;
+	list-style:none;
+	text-align:left;
+	line-height:100%;
+}
+
+ul.mainNav1 {
+	float:center;
+	display:block;
+	padding:0;
+	margin:0;
+}
+
+ul.mainNav1 li,
+ul.mainNav2 li,
+ul.mainNav3 li {
+	margin:0 !important;	
+	padding:0;
+	list-style:none;
+	display:inline;
+}
+
+ul.mainNav1 li a,
+ul.mainNav1 li a:link,
+ul.mainNav1 li a:active,
+ul.mainNav1 li a:visited {
+	position:relative;
+	display:block;
+	float:left;
+	text-decoration:none !important;
+	font-weight:normal;
+	margin:0 15px 0 0;
+}
+
+ul.mainNav1 li a span {
+	position:relative;
+	display:block;	
+	padding:6px;
+	margin:0; 	
+}
+
+ul.mainNav1 li a.current,
+ul.mainNav1 li a.parent,
+ul.mainNav1 li a:hover,
+ul.mainNav1 li a.current:hover,
+ul.mainNav1 li a.parent:hover { 
+	color:#ffffff !important;
+	background:#000000;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	}
+	
+
+/* 2nd/3rd Level */
+ul.mainNav2 li a,
+ul.mainNav2 li a:link,
+ul.mainNav2 li a:active,
+ul.mainNav2 li a:hover,
+ul.mainNav2 li a:visited {
+	display:block;
+	float:none;
+	text-decoration:none;
+	padding:8px 4px;
+	line-height:100%;
+	border-bottom:1px solid #F2EFEC;
+}
+	
+ul.mainNav2 li a.current,
+ul.mainNav2 li a.parent,
+ul.mainNav2 li a.current:hover,
+ul.mainNav2 li a.parent:hover,
+ul.mainNav3 li a.current,
+ul.mainNav3 li a.parent,
+ul.mainNav3 li a.current:hover,
+ul.mainNav3 li a.parent:hover {
+	font-weight:bold;
+}
+
+ul.mainNav3 { 
+	padding:0 0 20px 0;
+	margin:0;
+}
+
+ul.mainNav3 li a,
+ul.mainNav3 li a:link,
+ul.mainNav3 li a:active,
+ul.mainNav3 li a:hover,
+ul.mainNav3 li a:visited {
+	display:block;
+	text-decoration:none;
+	padding:8px 10px 8px 20px;
+	line-height:100%;
+	border:none;
+	}
+	

@@ -1,0 +1,90 @@
+	.main{
+		text-align:left;
+		border-left:solid 1px silver;
+		border-right:solid 1px silver;
+		background-color:white;
+		display:inline-block;
+		width:900px;
+		margin:0px auto;
+	}
+	.article{
+		float:left;
+		width:660px;
+		margin: 20px 40px;
+		border-left:solid 1px silver;
+		border-bottom:solid 1px silver;
+		padding-left:10px;
+	}
+	.titre-article{
+		color:#FF0000;
+		font-size:36px;
+                font-family:"Times New Roman", cursive;
+	}
+	
+/*
+td{
+	border-bottom: 9px solid #000 ;
+	border-right: 9px solid #000 ;
+	
+	
+	
+	}
+		*/
+	.p1{
+		position: static ;
+		text-align:left;
+		
+		background-image: url("back_3.png");
+		display:inline-block;
+		width:900px;
+		margin:0px auto;
+	}
+	.p2{
+			
+		float:left;
+		width:660px;
+		margin: 20px 40px;
+		height:600px ;
+		padding-left:10px;
+	}
+	.p3{
+			
+		color:firebrick;
+		font-size:50px;
+                font-family: "Gloria Hallelujah",cursive;
+	}
+	/*
+	
+	table{
+		border:0px solid ;
+		
+		
+		}
+		*/
+	h4
+{
+    font:normal normal bold 30px/190% "Trebuchet MS", Verdana, sans-seri;
+    color:#FFF;
+    
+}
+
+
+
+h5
+{
+	 font:normal normal bold 30px/190% "Trebuchet MS", Verdana, sans-seri;
+    font-size:26px ;
+	font-family:"MS Serif", "New York", serif ;
+    color:#FFF;
+    text-align:center;
+}
+
+	.back{
+		position: static ;
+		text-align:left;
+		
+		background-image: url("block.bmp");
+		display:inline-block;
+		width:900px;
+		margin:0px auto;
+	}
